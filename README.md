@@ -2,11 +2,7 @@ Warranty Intelligence System
 
 AI-powered Warranty Management & Reminder Platform built using Node.js, Supabase, and React (Vite).
 
-🌐 Live Demo
---------------------------------------
-🔗 Frontend (Vercel):
-
-
+-----------
 🚀 Features
 -----------------------------------
 User authentication with JWT
@@ -42,7 +38,7 @@ JWT Authentication
 
 Nodemailer (Email Service)
 
-
+---------
 🔐 Environment Variables
 -------------------------------
 Create a .env file in Backend:
@@ -63,6 +59,7 @@ EMAIL_PASS=your_app_password
 
 💻 Local Setup
 
+--------
 Backend:
 -----------------------
 cd Backend
@@ -71,6 +68,7 @@ npm install
 
 npm start
 
+-------
 Frontend:
 -------------------------------
 cd frontend
@@ -79,7 +77,7 @@ npm install
 
 npm run dev
 
-
+---------
 📌 Project Highlights
 ---------------------------------------
 Built as part of a hackathon team
@@ -90,7 +88,7 @@ Integrated Supabase for scalable data storage
 
 Designed modular architecture for future AI enhancements
 
-
+----------
 Commit and push:
 -----------------------------------
 git add .
