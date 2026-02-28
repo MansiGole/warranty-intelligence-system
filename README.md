@@ -1,33 +1,43 @@
 Warranty Intelligence System
----------------------------------
-AI-powered Warranty Management & Reminder Platform built using Node.js, Supabase, and React (Vite).
+------------------------------------------------------
+A full-stack Warranty Management & Reminder Platform built using React (Vite), Node.js, Express, and Supabase (PostgreSQL).
+Developed as part of a hackathon team project.
 
------------
-🚀 Features
------------------------------------
-User authentication with JWT
+---------------
+🌐 Live Demo
+--------------------------------
+Frontend (Vercel):
+👉 https://warranty-intelligence-system.vercel.app
 
-Product & warranty management
+---------------
+🚀 Key Features
+-----------------------------------------
+JWT-based user authentication
 
-Receipt upload & OCR data extraction
+Add, manage, and track product warranties
 
-Automated email reminders before expiry
+Receipt upload with OCR-based data extraction
 
-Real-time warranty status tracking
+Automated email reminders before warranty expiry
 
-Secure Supabase PostgreSQL integration
+Real-time warranty status dashboard
 
------------------
+Secure backend integration with Supabase
+
+
+--------------------
 🛠 Tech Stack
 ---------------------------
 Frontend
-
+--
 React (Vite)
 
 Tailwind CSS
 
-Backend
+Axios
 
+Backend
+-----------
 Node.js
 
 Express.js
@@ -36,12 +46,18 @@ Supabase (PostgreSQL)
 
 JWT Authentication
 
-Nodemailer (Email Service)
+Nodemailer (SMTP Email Service)
 
----------
-🔐 Environment Variables
--------------------------------
-Create a .env file in Backend:
+
+📂 Project Structure
+--------------------
+Backend/
+frontend/
+
+---------------------
+🔐 Environment Setup
+-----------------------------------------
+Create a .env file inside the Backend folder:
 
 PORT=5000
 
@@ -57,42 +73,53 @@ EMAIL_USER=your_email
 
 EMAIL_PASS=your_app_password
 
-💻 Local Setup
 
---------
-Backend:
------------------------
+💻 Local Installation
+---------------------------------
+Backend
+
 cd Backend
 
 npm install
 
 npm start
 
--------
-Frontend:
--------------------------------
+Frontend
+
 cd frontend
 
 npm install
 
 npm run dev
 
----------
-📌 Project Highlights
----------------------------------------
-Built as part of a hackathon team
+--------------------------------
+👩‍💻 My Contribution
+---------------------------------------------
+Implemented backend API routes using Express.js
 
-Implemented backend APIs and email reminder logic
+Integrated Supabase database connectivity
 
-Integrated Supabase for scalable data storage
+Configured JWT-based authentication
 
-Designed modular architecture for future AI enhancements
+Built automated email reminder module using Nodemailer
 
-----------
-Commit and push:
------------------------------------
-git add .
+Collaborated in a team-based hackathon environment
 
-git commit -m "Added professional README"
+----------------------------
+🔮 Future Improvements
+---------------------------------
+Backend deployment (Render/Railway)
 
+Role-based access control
+
+Analytics dashboard
+
+Cloud storage integration for receipts
+
+------------
+Now run:
+
+git add README.md
+
+git commit -m "Final professional README with live demo link"
 git push
