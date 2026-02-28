@@ -1,5 +1,5 @@
 Warranty Intelligence System
-
+---------------------------------
 AI-powered Warranty Management & Reminder Platform built using Node.js, Supabase, and React (Vite).
 
 -----------
