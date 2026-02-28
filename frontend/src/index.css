@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 99 102 241; /* Indigo-500 */
+    --secondary: 139 92 246; /* Violet-500 */
+    --bg-dark: 15 23 42; /* Slate-900 */
+  }
+
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f8fafc; /* Slate-50 */
+    color: #1e293b; /* Slate-800 */
+  }
+
+  body {
+    @apply antialiased min-h-screen;
+    background: #f8fafc;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-lg;
+  }
+  
+  .glass-dark {
+    @apply bg-slate-900/80 backdrop-blur-md border border-slate-700/50 shadow-xl;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600;
+  }
+
+  .nav-item-active {
+    @apply bg-indigo-50 text-indigo-700 border-r-4 border-indigo-500 font-medium;
+  }
+
+  .nav-item {
+    @apply text-slate-500 hover:bg-slate-50 hover:text-slate-900 transition-all duration-200 border-r-4 border-transparent flex items-center gap-3 px-6 py-3 text-sm;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full hover:bg-slate-400 transition-colors;
+}
